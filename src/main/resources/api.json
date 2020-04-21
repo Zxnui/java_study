@@ -1,0 +1,42 @@
+[
+  {
+    "index": 0,
+    "name": "公共分类",
+    "desc": "公共分类",
+    "add_time": 1566268410,
+    "up_time": 1566268410,
+    "list": [
+      {
+        "query_path": {
+          "path": "/demo"
+        },
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "method": "GET",
+        "title": "测试",
+        "path": "/demo",
+        "project_id": 160,
+        "req_params": [],
+        "res_body_type": "raw",
+        "uid": 30,
+        "add_time": 1566268725,
+        "up_time": 1566268809,
+        "req_query": [
+          {
+            "required": "1",
+            "name": "userCode",
+            "example": "adadadad"
+          },
+          {
+            "required": "0",
+            "name": "name",
+            "example": "123213"
+          }
+        ],
+        "res_body": "{\n\"code\": 1,\n\"msg\": null,\n\"data\": \"oZ0MZ6lBZNqJGcItqkCcxx8uJqR7kbze+7MKFKREJtrpzB2p97NXeYYF/LmAI4JYRdl6RJyZad7b0KZcI4ZL/T0K4ZI/2vFcHsPxGcYdyvrA+2D9VutWL7RHMqxPoV3APwJaZlvfzs4guyhJXeb+Aw==\"\n}"
+      }
+    ]
+  }
+]
