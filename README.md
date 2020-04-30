@@ -1,4 +1,4 @@
-# java 巩固
+# 学习 巩固
 
 ## 目录
 - [自我修养](https://github.com/Zxnui/java_study/blob/master/doc/1.0-think.md)
