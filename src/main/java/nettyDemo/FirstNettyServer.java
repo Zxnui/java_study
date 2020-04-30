@@ -16,7 +16,7 @@ public class FirstNettyServer {
         // step1 selector 轮询 Accept 事件，处理i/o，和client建立链接，监听复数个channel，等待处理结果
         // step2 processSelectedKeys  生成nioSocketChannel 注册channel到workerGroup的selector上
         // step3 runAllTasks 用户调用 eventloop.execute 或 schedule 执行的任务，或者其他线程提交到该 eventloop 的任务。
-        NioEventLoopGroup bossGroup = new NioEventLoopGroup();
+        NioEventLoopGroup bossGroup = new NioEventLoopGroup(1);
         //subReactor and workerThread 处理 I/O 读写事件和业务逻辑。内部包括selector and taskQueue
         // step1 selector 监听复数个channel，等待处理结果
         // step2 processSelectedKeys 轮询i/o事件，处理i/o,在 NioSocketChannel 可读、可写事件发生时进行处理 触发pipeline 各种handler
