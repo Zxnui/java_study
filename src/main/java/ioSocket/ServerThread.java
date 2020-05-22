@@ -1,4 +1,4 @@
-package blockSocket;
+package ioSocket;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -32,7 +32,7 @@ public class ServerThread implements Runnable{
                         flag = false;
                     }else{
                         //将接收到的字符串前面加上echo，发送到对应的客户端
-                        System.out.print("发送回复：");
+                        System.out.print("发送回复：" +str);
                         String response  = serverResponse.readLine();
                         out.println(response);
                     }
