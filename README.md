@@ -6,3 +6,4 @@
 - [java基础知识](https://github.com/Zxnui/java_study/blob/master/doc/1.2-javaBase.md)
 - [netty源码目录](https://github.com/Zxnui/java_study/blob/master/doc/1.3-nettyBase.md)
 - [常用技术汇总链接](https://github.com/Zxnui/java_study/blob/master/doc/1.5-usedList.md)
+- [ssl java秘钥(结合nettyTls包中程序阅读)](https://github.com/Zxnui/java_study/blob/master/doc/1.7-javaSSL.md)

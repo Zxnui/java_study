@@ -5,7 +5,7 @@ import java.io.*;
 public class FileUtil {
 
     public static String readFile() throws IOException {
-        String Path="E:\\test\\java_io\\src\\main\\resources\\apizza.json";
+        String Path=System.getProperty("user.dir")+"\\src\\main\\resources\\apizza.json";
         BufferedReader reader = null;
         String laststr = "";
         try {
@@ -33,7 +33,7 @@ public class FileUtil {
 
     public static void writeFile(String data) throws IOException {
         BufferedWriter writer = null;
-        File file = new File("E:\\test\\java_io\\src\\main\\resources\\test.json");
+        File file = new File(System.getProperty("user.dir")+"\\src\\main\\resources\\test.json");
         //如果文件不存在，则新建一个
         if(!file.exists()){
             try {

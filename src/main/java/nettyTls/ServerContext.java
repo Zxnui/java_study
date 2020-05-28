@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 import java.security.KeyStore;
 
 public class ServerContext {
-    private static SSLContext SERVER_CONTEXT = null;
+    private static SSLContext SERVER_CONTEXT;
     private static final String PROTOCOL = "TLS";
     private static String PASSWD = "123456";
     private static String KEYTYPE = "pkcs12";
@@ -17,13 +17,13 @@ public class ServerContext {
 
         try{
             KeyStore ks = KeyStore.getInstance(KEYTYPE);
-            ks.load(new FileInputStream("E:\\git\\company\\java_study\\src\\main\\resources\\server.keystore"),PASSWD.toCharArray());
+            ks.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\server.keystore"),PASSWD.toCharArray());
             //服务端私钥
             KeyManagerFactory kmf = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
             kmf.init(ks,PASSWD.toCharArray());
 
             KeyStore ts = KeyStore.getInstance(KEYTYPE);
-            ts.load(new FileInputStream("E:\\git\\company\\java_study\\src\\main\\resources\\server_trust.keystore"),PASSWD.toCharArray());
+            ts.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\server_trust.keystore"),PASSWD.toCharArray());
             //服务端信任的客户端公钥
             TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
             tmf.init(ts);
