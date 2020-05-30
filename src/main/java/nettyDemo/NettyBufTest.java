@@ -41,7 +41,7 @@ public class NettyBufTest {
         byteBuf.readByte();
         //读取1位
         byteBuf.readByte();
-        System.out.println(byteBuf);;
+        System.out.println(byteBuf);
 
         //重置索引到读标记位
         byteBuf.resetReaderIndex();

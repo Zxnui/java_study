@@ -6,6 +6,15 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+/**
+ * @author: zhuxun
+ * @data: 2020-05-30 11:37
+ * @description:
+ * bootstrap.channel 初始化时处理
+ * bootstrap.option 初始化配置
+ * bootstrap.childOption 客户端连接后参数
+ * bootstrap.childHandler 客户端连接后处理
+ */
 public class NettyServerChannelOption {
 
     public static void main(String[] args) {
